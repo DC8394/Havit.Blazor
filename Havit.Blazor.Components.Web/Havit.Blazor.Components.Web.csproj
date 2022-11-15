@@ -4,7 +4,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<NoWarn>1591;1701;1702;SA1134</NoWarn>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net7.0</TargetFramework>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -25,9 +25,10 @@
 
 	<ItemGroup>
 		<PackageReference Include="Havit.Core" Version="2.0.26" />
-		<PackageReference Include="Microsoft.Extensions.Localization" Version="6.0.10" />
+		<PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.17" Condition="'$(TargetFramework)' == 'net5.0'" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.10" Condition="'$(TargetFramework)' == 'net6.0'" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.0" Condition="'$(TargetFramework)' == 'net7.0'" />
 	</ItemGroup>
 	
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild">
