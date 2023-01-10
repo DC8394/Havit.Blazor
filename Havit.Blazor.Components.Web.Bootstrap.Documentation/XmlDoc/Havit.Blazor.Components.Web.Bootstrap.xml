@@ -3332,25 +3332,6 @@
             See also <see href="https://getbootstrap.com/docs/5.2/forms/overview/">https://getbootstrap.com/docs/5.2/forms/overview/</see>.
             </summary>
         </member>
-        <member name="F:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.InvalidCssClass">
-            <summary>
-            CSS class used for invalid input.
-            </summary>
-        </member>
-        <member name="M:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.GetDefaults">
-            <summary>
-            Return <see cref="T:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1"/> defaults.
-            Enables to not share defaults in descandants with base classes.
-            Enables to have multiple descendants which differs in the default values.
-            </summary>
-        </member>
-        <member name="M:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.GetSettings">
-            <summary>
-            Set of settings to be applied to the component instance (overrides <see cref="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase.Defaults"/>, overriden by individual parameters).
-            </summary>
-            <remarks>
-            Using interface does not force the implementation of settings to use specific class as a base type.</remarks>
-        </member>
         <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.ValidationMessageMode">
             <summary>
             Specifies how the validation message should be displayed.<br/>
@@ -3359,36 +3340,6 @@
         </member>
         <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.FormState">
             <inheritdoc cref="T:Havit.Blazor.Components.Web.FormState" />
-        </member>
-        <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.Label">
-            <summary>
-            Label text.
-            </summary>
-        </member>
-        <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.LabelTemplate">
-            <summary>
-            Label content.
-            </summary>
-        </member>
-        <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.Hint">
-            <summary>
-            Hint to render after input as form-text.
-            </summary>
-        </member>
-        <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.HintTemplate">
-            <summary>
-            Hint to render after input as form-text.
-            </summary>
-        </member>
-        <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.CssClass">
-            <summary>
-            Custom CSS class to render with wrapping div.
-            </summary>
-        </member>
-        <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.LabelCssClass">
-            <summary>
-            Custom CSS class to render with the label.
-            </summary>
         </member>
         <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.InputCssClass">
             <summary>
@@ -3403,13 +3354,6 @@
         <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.ChipTemplate">
             <summary>
             Chip template.
-            </summary>
-        </member>
-        <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.Enabled">
-            <summary>
-            When <c>null</c> (default), the <c>Enabled</c> value is received from cascading <see cref="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.FormState" />.
-            When value is <c>false</c>, input is rendered as disabled.
-            To set multiple controls as disabled use <seealso cref="T:Havit.Blazor.Components.Web.HxFormState" />.
             </summary>
         </member>
         <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.EnabledEffective">
@@ -3469,6 +3413,32 @@
             CurrentValue is not virtual, so CurrentValueAsString calls CurrentValue in a base class.
             There is no such check.
             </remarks>
+        </member>
+        <member name="F:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.InvalidCssClass">
+            <summary>
+            CSS class used for invalid input.
+            </summary>
+        </member>
+        <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.Enabled">
+            <summary>
+            When <c>null</c> (default), the <c>Enabled</c> value is received from cascading <see cref="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.FormState" />.
+            When value is <c>false</c>, input is rendered as disabled.
+            To set multiple controls as disabled use <seealso cref="T:Havit.Blazor.Components.Web.HxFormState" />.
+            </summary>
+        </member>
+        <member name="M:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.GetDefaults">
+            <summary>
+            Return <see cref="T:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1"/> defaults.
+            Enables to not share defaults in descandants with base classes.
+            Enables to have multiple descendants which differs in the default values.
+            </summary>
+        </member>
+        <member name="M:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.GetSettings">
+            <summary>
+            Set of settings to be applied to the component instance (overrides <see cref="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase.Defaults"/>, overriden by individual parameters).
+            </summary>
+            <remarks>
+            Using interface does not force the implementation of settings to use specific class as a base type.</remarks>
         </member>
         <member name="M:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.OnParametersSet">
             <inheritdoc />
@@ -3563,6 +3533,36 @@
         <member name="M:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.ThrowIfNotEnabled">
             <summary>
             Throws <see cref="T:System.InvalidOperationException" /> when the component is disabled.
+            </summary>
+        </member>
+        <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.Label">
+            <summary>
+            Label text.
+            </summary>
+        </member>
+        <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.LabelTemplate">
+            <summary>
+            Label content.
+            </summary>
+        </member>
+        <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.Hint">
+            <summary>
+            Hint to render after input as form-text.
+            </summary>
+        </member>
+        <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.HintTemplate">
+            <summary>
+            Hint to render after input as form-text.
+            </summary>
+        </member>
+        <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.CssClass">
+            <summary>
+            Custom CSS class to render with wrapping div.
+            </summary>
+        </member>
+        <member name="P:Havit.Blazor.Components.Web.Bootstrap.HxInputBase`1.LabelCssClass">
+            <summary>
+            Custom CSS class to render with the label.
             </summary>
         </member>
         <member name="T:Havit.Blazor.Components.Web.Bootstrap.HxInputBase">
